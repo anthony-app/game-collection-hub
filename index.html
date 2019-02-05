@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- 
+Anthony A----------
+
+HTML/CSS in the file for the design of the webpage.
+Provides the user with a log in form in order to alter / view the video game collection database
+-->
+<html>
+    
+    <head>
+        
+        <title>Login Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    
+    <body>
+
+        <br>
+
+        <div id="hdr">
+            <h1>----- VIDEO GAME COLLECTION -----</h1>
+        </div>
+
+        <div id='banner'>
+                <br>
+        </div>
+
+        <br><br>
+        
+        <h3>Please enter your username and password to access your collection!</h3>
+        <br><br>
+        
+        <!-- Log In form to allow access to collection action="gameManager.php" -->    
+        <div id="container">
+                <form action="gameManager.php" method="POST">
+                    <label>USERNAME:</label> 
+                    <input type="text" name="username" placeholder="ex. Anthony" required>
+                    <br><br>
+                    <label>PASSWORD:</label> 
+                    <input type="password" name="password">
+                    <br><br>
+                    <button type="submit" class="but" name="loginBut">LOG IN</button>
+                </form>
+        </div>
+        
+        <br>    
+        
+        <div id='bar'>
+                <br>
+        </div>
+        
+    </body>
+    
+</html>
